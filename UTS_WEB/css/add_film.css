@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #000000, #221e20, #3e373c, #59525c, #736f7f);
+    background-attachment: fixed;
+    color: white;
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    /* width: 100%; */
+    height: auto;
+    justify-content: space-between;
+    background-image: linear-gradient(to left top, #6998ab, #547e93, #40657b, #2d4e64, #1a374d);    padding: 0 100px;
+    padding: 0 40px;
+}
+
+header .tixid{
+    color: #6998AB;
+    line-height: 60px;
+    font-size: 30px;
+    float: left;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #B1D0E0;
+    background-color: #406882;
+}
+
+.menu-bar{
+    color: #6998AB;
+    float: right;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 650px){
+    header{
+        padding: 0 0px;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #406882;
+        top: 50px;
+        left: -100%;
+        transition: 0.6s all;
+    }
+
+    header nav.active{
+        left: 0;
+    }
+    
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul li a:hover{
+        /* border: 1px solid #1A374D; */
+        color: #1A374D;
+
+    }
+}
+
+header {
+    position:sticky;
+    top: 0;
+}
+
+.kosong{
+    width: 100%;
+    height: 40px;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    margin-top: -10px;
+}
+
+.tixid{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    color: #6998AB;
+    font-family: 'Raleway',sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #6998ab, #547e93, #40657b, #2d4e64, #1a374d);    padding: 0 100px;
+    width: 500px;
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+    /* margin-top: 100px; */
+}
+
+h3{
+    color: #1A374D;
+    font-family:  'Raleway',sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 10px;
+    text-align: center;
+}
+
+.line-1 {
+    height: 1px;
+    background: black;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.input-container{
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon{
+    padding: 10px;
+    background: #5DA7DB;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-field:focus{
+    border: 2px solid #5DA7DB;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.btn-reg{
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+.btn-reg:hover{
+    opacity: 1;
+}
+
+.to-login{
+    font-size: 17px;
+    color: #1A374D;
+    line-height: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+}
+
+h4{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+h4 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: yellowgreen;
+    font-weight: 100;
+}
