@@ -19,7 +19,7 @@
         $jam_3 = htmlspecialchars($_POST['jam_3']);
         $hari = htmlspecialchars($_POST['hari']);
         $tanggal = $_POST['tanggal'];
-
+    }
 ?>
 
 <!DOCTYPE html>
