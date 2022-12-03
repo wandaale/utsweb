@@ -35,6 +35,17 @@ CREATE TABLE `akun_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Struktur dari tabel `akun_user`
+--
+
+CREATE TABLE `akun_user` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `psw` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
 -- Dumping data untuk tabel `akun_admin`
 --
 
