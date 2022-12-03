@@ -39,7 +39,7 @@ CREATE TABLE `akun_admin` (
 --
 
 INSERT INTO `akun_admin` (`id`, `email`, `username`, `psw`) VALUES
-(1, 'admin@gmail.com', 'admin', '123'),
+(1, 'admin@gmail.com', 'admin', '123');
 
 -- --------------------------------------------------------
 
